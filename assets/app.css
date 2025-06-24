@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    background-color: #4B9CD3;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(./images/wood-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+        height: 100vh;
+    width: 100vw;
+}
+.content-wrapper{
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #13294B;
+}
+.content-wrapper .title-wrap, .content-wrapper .task-adder, .content-wrapper .list-wrapper{
+    width:100%;
+}
+.title-wrap, .task-adder{
+    display:flex;
+    justify-content: center;
+    margin-bottom:20px;
+}
+h1{
+    font-size: 28px;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #13294B;
+}
+.list-wrapper{
+    display:flex;
+    flex-direction: column;
+}
+#addTasks{
+    flex-basis: 70%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #13294B;
+    border: 1px solid #13294B;
+    padding: 4px;
+    line-height: 20px;
+}
+#addTaskBtn{
+    flex-basis: 30%;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #13294B;
+    background-color:#4B9CD3; 
+    border:1px solid #13294B;
+    padding: 4px;
+    line-height: 20px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #4caf50;
+  user-select: none;
+}
+.checkbox:active, .checkbox:focus {
+  background: #e0e0e0;
+}
+
+.list-item-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: opacity 0.6s;
+  width: 100%;
+}
+.list-item{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #13294B;
+    border-bottom: 1px solid #4B9CD3;
+    width: calc(100% - 30px);
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* MEDIA QUERIES: */
+@media (max-width: 650px) {
+    body{
+        background-size:cover;
+    }
+    .content-wrapper{
+        margin: 20px;
+    }
+    .task-adder{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #addTasks, #addTaskBtn{
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-bottom:10px;
+    }
+}
