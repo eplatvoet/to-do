@@ -99,6 +99,20 @@ h1{
   transition: opacity 1s;
 }
 
+.footer{
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #13294B;
+    display: flex;
+    justify-content:center;
+    padding: 0 20px;
+}
+.footer h1{
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
 /* MEDIA QUERIES: */
 @media (max-width: 650px) {
     body{
@@ -115,5 +129,8 @@ h1{
         flex-basis: 100%;
         margin-left: 0;
         margin-bottom:10px;
+    }
+    .footer{
+        margin: 20px;
     }
 }
